@@ -21,7 +21,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Abra o terminal no VS code
 3. Execute o comando: `npm i`
 4. Rode usando: `npm start`
-5. Abra o navegador e acesse `http://localhost:4200/`
+5. Execute o comando `json-server --watch .\mock\mock.json` para usar API local de mock
+6. Abra o navegador e acesse `http://localhost:4200/`
 
 **English:**
 
@@ -29,4 +30,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Open the terminal in VS Code
 3. Run the command: `npm install`
 4. Run the application: `npm start`
-5. Open your browser and go to `http://localhost:4200/`
+5. Run the command `json-server --watch .\mock\mock.json` to use the local mock API.
+6. Open your browser and go to `http://localhost:4200/`
