@@ -1,0 +1,74 @@
+.container-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.table {
+    border-collapse: collapse;
+    border: 0.1rem solid rgb(72, 99, 134);
+    padding: 0.5rem;
+    text-align: left;
+    width: 90%;
+    margin: 2rem 0;
+    color: #202831;
+}
+
+.table-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #202831;
+}
+
+.table th {
+    background-color: rgb(121, 181, 181);
+    padding: 0.5rem;
+}
+
+.border {
+    background-color: azure;
+}
+
+.table td {
+    padding: 0.8rem 0.5rem;
+}
+
+.actions {
+    width: 20%;
+    text-align: center;
+}
+
+#edit {
+    width: 1rem;
+    transition: transform .2s;
+}
+
+#edit:hover {
+    transform: scale(1.1);
+}
+
+#delete {
+    width: 1rem;
+    margin-left: 0.3rem;
+    transition: transform .2s;
+}
+
+#delete:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    background-color: #202831;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    color: white;
+    transition: transform .2s;
+    box-shadow: #35404d 2px 2px 5px;
+}
+
+.button:hover {
+    background-color: #35404d;
+    transform: scale(1.1);
+}

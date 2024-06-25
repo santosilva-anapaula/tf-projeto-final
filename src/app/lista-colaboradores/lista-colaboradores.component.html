@@ -1,0 +1,22 @@
+
+<div class="container-list">
+    <table class="table">
+        <caption class="table-title">Lista de colaboradores</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Cargo</th>
+            <th class="actions">Ações</th>
+        </tr>
+        @for ( employee of responseEmployee; track $index) {
+            <tr class="border">
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.jobTitle }}</td>
+                <td class="actions">
+                    <span (click)="edit(employee.id)"><img src="../../assets/pencil-square.svg" alt="editar" id="edit"></span>
+                    <span (click)="delete(employee.id)"><img src="../../assets/trash3-fill.svg" alt="excluir" id="delete"></span>                    
+                </td>
+            </tr>
+        }
+    </table>
+    <button (click)="register()" class="button">Cadastrar colaboradores</button>
+</div>

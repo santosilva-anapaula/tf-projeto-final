@@ -1,0 +1,21 @@
+
+<div class="form">
+    <h2 class="title-form">Cadastrar Colaborador</h2>
+    <div>
+        <label for="name" class="label-form">Nome</label>
+        <input type="text" id="name" class="input-form" placeholder="nome" [(ngModel)]="name" name="name">
+    </div>
+    
+    <div>
+        <label for="position" class="label-form">Cargo</label>
+        <input type="text" id="position" class="input-form" placeholder="cargo" [(ngModel)]="jobTitle" name="jobTitle">
+    </div>
+
+    @if (showButton === 'register') {
+        <button class="button-form" (click)="register()">Cadastrar</button>
+    }
+
+    @if (showButton === 'edit') {
+        <button class="button-form" (click)="edit()">Editar</button>
+    }
+</div>
